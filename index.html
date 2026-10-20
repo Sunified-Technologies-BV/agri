@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<meta name="robots" content="noindex,nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sunified UNITY · AgriPV Data Mesh</title>
@@ -148,13 +149,42 @@ footer .legal a{color:var(--amber)}
 }
 .skip{position:absolute;left:-9999px;top:8px;z-index:30;background:var(--amber);color:var(--navy);padding:8px 12px;border-radius:4px;font-weight:600}.skip:focus{left:16px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.conf{background:#7A1F1F;color:#FBF7E9;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;text-align:center;padding:6px var(--gutter);line-height:1.5}
+.conf b{color:#FFD9A0;font-weight:600}
+.cta-call{display:inline-flex;align-items:center;gap:8px;flex:none;background:var(--amber);color:#00232E;font-family:var(--sans);font-weight:700;font-size:13px;letter-spacing:.01em;padding:7px 14px;border-radius:4px;border:2px solid #2E7D4F;cursor:pointer;white-space:nowrap;transition:background .18s ease,box-shadow .18s ease}
+.cta-call:hover,.cta-call:focus-visible{background:#FFC24D;box-shadow:0 0 0 3px rgba(252,154,28,.25)}
+.cta-call svg,.btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+@media(max-width:560px){.cta-call .lbl{display:none}.cta-call{padding:7px 10px}}
+.cta{background:var(--navy);color:var(--cream);padding:64px 0;border-top:1px solid var(--line-navy)}
+.cta h2{color:var(--cream);margin:0 0 14px}
+.cta p{color:var(--soft);max-width:68ch}
+.btn{display:inline-flex;align-items:center;gap:9px;margin-top:10px;background:var(--amber);color:#00232E;font-family:var(--sans);font-weight:700;font-size:15px;padding:11px 24px;border-radius:4px;border:2px solid #2E7D4F;cursor:pointer;transition:background .18s ease,box-shadow .18s ease}
+.btn:hover,.btn:focus-visible{background:#FFC24D;box-shadow:0 0 0 3px rgba(252,154,28,.25)}
+.cta-alt{margin-top:16px;font-size:13.5px;color:var(--muted)}
+.cta-alt a{color:var(--amber)}
+#bookPanel{position:fixed;top:0;right:0;height:100vh;width:min(468px,100%);background:var(--navy-2);color:var(--cream);border-left:1px solid var(--line-navy);z-index:60;transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;box-shadow:-18px 0 46px rgba(0,0,0,.34);visibility:hidden}
+#bookPanel.open{transform:none;visibility:visible}
+#bookPanel .ph{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:20px 22px 16px;border-bottom:1px solid var(--line-navy)}
+#bookPanel .ph h2{font-size:17px;font-weight:700;margin:0 0 5px;color:var(--cream)}
+#bookPanel .ph p{margin:0;font-size:13px;color:var(--soft);max-width:34ch;line-height:1.5}
+#bookClose{background:none;border:0;color:var(--soft);font-size:28px;line-height:1;cursor:pointer;padding:0 4px}
+#bookBody{flex:1;min-height:0;overflow:auto}
+#bookBody .calendly-inline-widget{height:100%;min-height:640px}
+#bookBody .loading{padding:24px 22px;color:var(--soft);font-size:14px}
 </style>
 </head>
 <body>
 <a href="#position" class="skip">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-call" viewBox="0 0 24 24"><path d="M15.6 21.2A15.4 15.4 0 0 1 2.8 8.4 3 3 0 0 1 5.8 5h2.1a1.5 1.5 0 0 1 1.5 1.3c.1.9.3 1.8.6 2.6a1.5 1.5 0 0 1-.34 1.58l-.9.9a12.4 12.4 0 0 0 5.86 5.86l.9-.9a1.5 1.5 0 0 1 1.58-.34c.84.3 1.72.5 2.6.6A1.5 1.5 0 0 1 21 18.1v2.1a3 3 0 0 1-3.4 3 15.5 15.5 0 0 1-2-.3Z"/></symbol>
+<symbol id="i-video" viewBox="0 0 24 24"><rect x="2.4" y="6" width="13.4" height="12" rx="2.4"/><path d="M15.8 10.6 21.6 7.4v9.2l-5.8-3.2Z"/></symbol>
+</defs></svg>
+<div class="conf" role="note"><b>Confidential</b> · Sunified Group BV · Prepared for discussion with named partners · Not for onward distribution</div>
 <nav class="topnav" aria-label="Sections"><div class="wrap">
   <a class="brand" href="#top" aria-label="Sunified, back to top"><img src="assets/sunified-wordmark.png" alt="Sunified" width="1110" height="146"></a>
-  <div class="navlinks"><a href="#position">Position</a><a href="#problem">Problem</a><a href="#architecture">Architecture</a><a href="#sensors">Sensor stack</a><a href="#positioning">Positioning</a><a href="#market">Market</a><a href="#steelman">Steelman</a><a href="#red-team">Red team</a><a href="#double-barrel">Double Barrel</a><a href="#economics">Economics</a><a href="#next-steps">Next steps</a><a href="#sources">Sources</a></div>
+  <div class="navlinks"><a href="#position">Position</a><a href="#problem">Problem</a><a href="#architecture">Architecture</a><a href="#sensors">Sensor stack</a><a href="#positioning">Positioning</a><a href="#market">Market</a><a href="#steelman">Steelman</a><a href="#red-team">Red team</a><a href="#double-barrel">Double Barrel</a><a href="#economics">Economics</a><a href="#next-steps">Next steps</a><a href="#sources">Sources</a><a href="#book">Book a call</a></div>
+  <button class="cta-call" type="button" data-cal="https://calendly.com/lgv/phone-lgv-10-min?hide_gdpr_banner=1&amp;background_color=003E52&amp;text_color=FCF8EA&amp;primary_color=FFAA00" data-cal-title="Book a 10-minute call" data-cal-note="Mobile, WhatsApp, Google Hangout or Zoom. Enough to work out whether there is a fit."><svg><use href="#i-call"></use></svg><span class="lbl">10-minute Call</span></button>
 </div></nav>
 
 <header class="hero" id="top"><div class="wrap">
@@ -219,6 +249,19 @@ footer .legal a{color:var(--amber)}
 <p class="kicker"><span class="rule"></span>11 · NEXT STEPS</p>
 <h2>Next steps</h2>
 <div class="prose"><ul class="checks"><li><span class="box" aria-hidden="true"></span><span>Get the MOU draft from Claude Mindorff and confirm the Phase 1 build date and site (Oliver per press, Summerland per the July notes)</span></li><li><span class="box" aria-hidden="true"></span><span>Confirm open reference rows of the same variety and age next to Phase 1</span></li><li><span class="box" aria-hidden="true"></span><span>Ask Wirepas two questions: radio time for Channel Sounding on xG24, and the per-unit licence price</span></li><li><span class="box" aria-hidden="true"></span><span>Price the node: EFR32MG24B in QFN with 40 MHz crystal plus NXP SE05x, with and without a ranging companion</span></li><li><span class="box" aria-hidden="true"></span><span>Reopen DOTS (Rafi Levi): current status and a nitrate head on a UNITY fertigation node</span></li><li><span class="box" aria-hidden="true"></span><span>Offer SFU CERG (Omri Haiven) co-design of the ALC report protocol, so the evidence format is agreed before the season</span></li><li><span class="box" aria-hidden="true"></span><span>Take the same evidence pack to Voltiris through Kaz Vermeer, with Elektra Baselland as the buyer</span></li></ul></div></div></section>
+<section class="cta" id="book"><div class="wrap">
+  <h2>Ten minutes to see if it fits. Thirty to go deep.</h2>
+  <p>We are looking for agrivoltaic and greenhouse PV sites where one season of signed evidence unlocks the next phase, starting with Double Barrel Vineyards. If a build, an approval or a financing round is coming up in the next twelve months, that is the conversation worth having.</p>
+  <p>The short call is a fit check on mobile, WhatsApp or Hangout. The Zoom is the technical walk-through: the node, the mesh, the reference-row protocol and where your build window sits.</p>
+  <button class="btn" type="button" data-cal="https://calendly.com/lgv/30-zoom-call?hide_gdpr_banner=1&amp;background_color=003E52&amp;text_color=FCF8EA&amp;primary_color=FFAA00" data-cal-title="Book a 30-minute Zoom" data-cal-note="Video and screen sharing, in LG’s private room. For the technical walk-through: node, mesh, reference rows and the build window."><svg><use href="#i-video"></use></svg>30-minute Zoom call with LGV</button>
+  <p class="cta-alt">Prefer to write first? <a href="mailto:LG@sunified.com?subject=UNITY%20AgriPV%20enquiry">LG@sunified.com</a> · both calls book through Calendly.com/lgv</p>
+</div></section>
+
+<aside id="bookPanel" aria-hidden="true" aria-label="Book a call">
+  <div class="ph"><div><h2>Book a call</h2><p></p></div><button id="bookClose" type="button" aria-label="Close booking panel">&times;</button></div>
+  <div id="bookBody"><div class="loading">Ready when you are.</div></div>
+</aside>
+
 <section id="revisions" class="sec navy"><div class="wrap">
 <p class="kicker"><span class="rule"></span>12 · REVISION HISTORY</p>
 <h2>Revision history</h2>
@@ -245,6 +288,31 @@ footer .legal a{color:var(--amber)}
       if(a){a.classList.add('active');var n=a.parentNode;var x=a.offsetLeft-n.clientWidth/2+a.clientWidth/2;n.scrollTo({left:x,behavior:'smooth'});}}
   });},{rootMargin:'-45% 0px -50% 0px'});
   document.querySelectorAll('main section').forEach(function(s){io.observe(s)});
+})();
+</script>
+<script>
+(function(){
+  var panel=document.getElementById('bookPanel'),body=document.getElementById('bookBody'),
+      h=panel.querySelector('.ph h2'),n=panel.querySelector('.ph p'),opener=null,cur=null,loaded=false;
+  function paint(url){
+    if(cur===url)return; cur=url; body.innerHTML='';
+    if(window.Calendly&&window.Calendly.initInlineWidget){window.Calendly.initInlineWidget({url:url,parentElement:body});return;}
+    body.innerHTML='<div class="calendly-inline-widget" data-url="'+url+'"></div>';
+    if(!loaded){loaded=true;var sc=document.createElement('script');sc.src='https://assets.calendly.com/assets/external/widget.js';sc.async=true;document.head.appendChild(sc);}
+  }
+  function open(btn){
+    opener=btn; h.textContent=btn.getAttribute('data-cal-title'); n.textContent=btn.getAttribute('data-cal-note');
+    paint(btn.getAttribute('data-cal')); panel.classList.add('open'); panel.setAttribute('aria-hidden','false');
+    document.querySelectorAll('[data-cal]').forEach(function(b){b.setAttribute('aria-expanded',b===btn?'true':'false');});
+    document.getElementById('bookClose').focus();
+  }
+  function close(){panel.classList.remove('open');panel.setAttribute('aria-hidden','true');
+    document.querySelectorAll('[data-cal]').forEach(function(b){b.setAttribute('aria-expanded','false');});
+    if(opener)opener.focus();}
+  document.querySelectorAll('[data-cal]').forEach(function(b){b.setAttribute('aria-controls','bookPanel');b.setAttribute('aria-expanded','false');
+    b.addEventListener('click',function(){panel.classList.contains('open')&&opener===b?close():open(b);});});
+  document.getElementById('bookClose').addEventListener('click',close);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&panel.classList.contains('open'))close();});
 })();
 </script>
 </body>
